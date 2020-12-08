@@ -86,9 +86,11 @@ mkdir build
 cd build
 cmake ..
 make
-./environment
 ```
-Running this creates a 3D Viewer of a highway driving scenario. 
+
+Once you have built an executable file, you can launch it by doing ./environment. Now you should see a window popping up that looks like the image above.
+
+Here you have a simple highway simulator environment with the ego car in green in the center lane (thats your car), and the other traffic cars in blue. Everything is rendered using PCL with simple boxes, lines, and colors. You can move around your environment with the mouse. Try holding the left mouse button to orbit around the scene. You can also pan around the scene by holding the middle mouse button and moving. To zoom, use the middle scroll mouse button or the right mouse button while moving. Running this creates a 3D Viewer of a highway driving scenario. 
 
 <img src="media/3D_Viewer_Highway.png" width="700" height="400" />
 
