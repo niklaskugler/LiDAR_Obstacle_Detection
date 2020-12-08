@@ -88,3 +88,7 @@ cmake ..
 make
 ./environment
 ```
+Running this creates a 3D Viewer of a highway driving scenario. 
+
+<img src="media/3D_Viewer_Highway.png" width="700" height="400" />
+
