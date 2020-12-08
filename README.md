@@ -78,3 +78,13 @@ NOTE: very old version
 	- environment.cpp - the main file for using pcl viewer and processing and visualizing pcd.
 	- processPointClouds.h
 	- processPointClouds.cpp - Functions for filtering, segmenting, clustering, boxing, loading, 	       and saving pcd.
+
+## Compile the Code
+
+```terminal
+mkdir build
+cd build
+cmake ..
+make
+./environment
+```
