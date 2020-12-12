@@ -28,6 +28,14 @@ $> make
 $> ./environment
 ```
 
+## Install PCL, C++ on Linux Ubuntu 16
+
+Follow the link: https://larrylisky.com/2014/03/03/installing-pcl-on-ubuntu/
+
+A few updates to the instructions above were needed: 
+* libvtk needed to be updated to libvtk6-dev instead of (libvtk5-dev). The linker was having trouble locating libvtk5-dev while building, but this might not be a problem for everyone
+* BUILD_visualization needed to be manually turned on, this link shows you how to do that: http://www.pointclouds.org/documentation/tutorials/building_pcl.php
+
 ### Windows 
 
 http://www.pointclouds.org/downloads/windows.html
@@ -71,13 +79,13 @@ NOTE: very old version
 	- render
 		- box.h - this file has the struct definitions for box objects
 		- render.h
-		- render.cpp - this file, along with the header, define the classes and methods for 		      rendering objects.
+		- render.cpp - this file, along with the header, define the classes and methods for rendering objects.
 	- sensors
 		- data - this directory contains pcd data used in the course.
 		- lidar.h - has functions using ray casting for creating pcd.
 	- environment.cpp - the main file for using pcl viewer and processing and visualizing pcd.
 	- processPointClouds.h
-	- processPointClouds.cpp - Functions for filtering, segmenting, clustering, boxing, loading, 	       and saving pcd.
+	- processPointClouds.cpp - Functions for filtering, segmenting, clustering, boxing, loading, and saving pcd.
 
 ## Compile the Code
 
@@ -94,3 +102,6 @@ Here you have a simple highway simulator environment with the ego car in green i
 
 <img src="media/3D_Viewer_Highway.png" width="700" height="400" />
 
+## Using the Lidar Object
+
+<img src="media/3D_Viewer_Highway.png" width="700" height="400" />
